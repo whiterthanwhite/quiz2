@@ -44,23 +44,35 @@
                                     <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qsI-71-ywB"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0f-kj-dDJ">
+                                <rect key="frame" x="175.66666666666666" y="201" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Vaq-mH-XUi" firstAttribute="top" secondItem="5yq-EG-3FG" secondAttribute="bottom" constant="8" symbolic="YES" id="3x1-Dt-Efo"/>
+                            <constraint firstItem="6cd-rf-MC9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bib-4F-4Gz"/>
                             <constraint firstItem="Vaq-mH-XUi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CSd-FZ-GBR"/>
                             <constraint firstItem="6cd-rf-MC9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="142" id="Mrb-n7-kcc"/>
-                            <constraint firstItem="6cd-rf-MC9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RMC-jC-iyd"/>
+                            <constraint firstItem="h0f-kj-dDJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="142" id="aSm-rB-brl"/>
                             <constraint firstItem="5yq-EG-3FG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aWK-D8-0ZL"/>
+                            <constraint firstItem="h0f-kj-dDJ" firstAttribute="top" secondItem="6cd-rf-MC9" secondAttribute="top" id="bbg-ht-ciS"/>
                             <constraint firstItem="5yq-EG-3FG" firstAttribute="top" secondItem="ZzD-nC-H6t" secondAttribute="bottom" constant="191" id="i2v-nI-ba5"/>
                             <constraint firstItem="ZzD-nC-H6t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lyf-iz-h6e"/>
                             <constraint firstItem="ZzD-nC-H6t" firstAttribute="top" secondItem="6cd-rf-MC9" secondAttribute="bottom" constant="8" symbolic="YES" id="taP-PD-jmm"/>
+                            <constraint firstItem="h0f-kj-dDJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wl7-mE-EUr"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="5yq-EG-3FG" id="XTP-N3-fg8"/>
-                        <outlet property="questionLabel" destination="6cd-rf-MC9" id="GBs-wz-U7A"/>
+                        <outlet property="currQuestionLabel" destination="6cd-rf-MC9" id="Nca-D6-QNa"/>
+                        <outlet property="currQuestionLabelCenterXConstraint" destination="Bib-4F-4Gz" id="fO3-UY-mZu"/>
+                        <outlet property="nextQuestionLabel" destination="h0f-kj-dDJ" id="Ng2-oi-3GN"/>
+                        <outlet property="nextQuestionLabelCenterXConstraint" destination="wl7-mE-EUr" id="9aY-iC-axH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
